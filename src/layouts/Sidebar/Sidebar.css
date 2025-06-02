@@ -1,0 +1,21 @@
+.sidebar-list {
+    z-index: 1;
+    background: white;
+    width: 100%;
+    text-align: end;
+}
+
+.navbar-p-x {
+    padding: 1rem 2.2rem !important;
+}
+
+.sidebar-nav-container {
+    position: fixed;
+    top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar-nav-container {
+        display: none;
+    }
+}

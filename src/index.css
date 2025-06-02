@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +14,228 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  /* min-height: 100%;
+  overflow: hidden; */
+  height: 100%;
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+
+.mx-auto {
+  margin: 0px auto !important;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.gap-1 {
+  grid-column-gap: 1rem;
+}
+
+.gap-2 {
+  grid-column-gap: 2rem;
+}
+
+.gap-2-row {
+  grid-row-gap: 2rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* .overflow-auto {
+  overflow: auto;
+}
+
+.h-100vh {
+  height: calc(100vh - 140px);
+} */
+
+.list {
+  list-style-type: none;
+}
+
+.navbar-link {
+    padding: 0rem 1.2rem;
+    display: flex;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    align-items: center;
+}
+
+.navbar-link:link, .navbar-link:visited {
+  color: #333;
+}
+
+.navbar-link:hover {
+  color: #7843E9;
+}
+
+.navbar-link:active {
+  color: #7843E9;
+}
+
+.navbar-link svg {
+  font-size: 1.5rem;
+}
+
+.navbar-link-text {
+  display: none;
+}
+
+.selected-navbar-link {
+  color: #7843E9 !important;
+}
+
+.page-main-container {
+  padding: 2rem 0rem;
+}
+
+.page-heading {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111;
+}
+
+.page-content-container {
+  padding: 0rem 2rem;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.link {
+  padding: 0.5rem 1rem;
+  background: #7843E9;
+  color: #fff;
+  border: 2px solid #7843E9;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 400;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  text-decoration: none;
+}
+
+.link:hover {
+  background: #fafafa;
+  color: #7843E9;
+  border: 2px solid #7843E9;
+  transition: transform 1s;
+  border-radius: 10px;
+  box-shadow:  0 0 4px 4px #ccc;
+}
+
+li::marker {
+  color: #7843E9;
+}
+
+.react-icons {
+  font-size: 1.8rem;
+} 
+
+.border-radius-50 {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-link-text {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    padding: 1rem 3rem;
+    font-weight: 700;
+  }
+
+  .page-content-container {
+    padding: 0rem 3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .page-heading {
+    font-size: 2rem;
+  }
 }

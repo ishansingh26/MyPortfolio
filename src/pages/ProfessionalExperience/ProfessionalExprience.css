@@ -1,0 +1,36 @@
+.company-logo {
+    height: 100px;
+    object-fit: cover;
+}
+
+.prof-exp-flex-box {
+    padding: 1rem;
+    background-color: #FFF;
+    border-radius: 16px;
+    border-top: 8px solid #7843E9;
+    border-bottom: 8px solid #7843E9;
+    border-left: 2px solid #7843E9;
+    border-right: 2px solid #7843E9;
+}
+
+.grid-container {
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .company-logo {
+        height: 125px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .prof-exp-flex-box {
+        padding: 2rem;
+        flex: 0 1 calc(50% - 1rem);
+    }
+
+    .company-logo {
+        height: 150px;
+    }
+}

@@ -1,0 +1,15 @@
+.main-layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-wrapper {
+    top: 0px;
+    background-color: #FFF;
+    z-index: 2;
+}
+
+.main-pages-wrapper {
+    flex: 1;
+}
