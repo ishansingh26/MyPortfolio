@@ -1,4 +1,4 @@
-import { homeIcons, labels } from "../../config/constants";
+import { currentYear, homeIcons, labels } from "../../config/constants";
 import "./Footer.css";
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
     <section className="footer">
       <div className="d-flex justify-content-between footer-container mx-auto">
         <div className="footer-flex-items">
-          <h2 className="social-text">ISHAN SINGH</h2>
+          <h2 className="social-text">{myName}</h2>
           <p className="footer-para w-100">
             Frontend Web Developer specializing in building fast, scalable, and
             maintainable web applications that drive product success.
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="footer-copy-right-content mx-auto">
-        © Copyright 2025 . Made by {myName}
+        © Copyright {currentYear} . Made by {myName}
       </p>
     </section>
   );

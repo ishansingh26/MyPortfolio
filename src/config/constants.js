@@ -78,3 +78,5 @@ export const homeIcons = [
     link: "https://github.com/ishansingh26",
   },
 ];
+
+export const currentYear = new Date().getFullYear();
